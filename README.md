@@ -4,7 +4,7 @@ here is the steps to copy the whole structure locally and set it up
 [image](https://github.com/user-attachments/assets/eb4564b0-26bf-4aed-a7f1-fb847daf1b43)
 
 
-# git clone https://github.com/warisamir/doctor.git
+# git clone https://github.com/Abhiranjan0/doctor-management.git
 
 #### cd back 
 #### npm i 
