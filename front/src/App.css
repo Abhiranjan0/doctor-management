@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+.logo-container {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  padding:2 1; /* Adjust padding as needed */
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem; /* Adjust as needed */
+  color: inherit;
+  text-decoration: none;
+}
+.navigation {
+  margin-right: 40px; /* Adjust as needed */
+}
+
+.nav-link:hover {
+  color: solid black;
+  /* Add any hover effect you want */
+}
+
+.active {
+  font-weight: bold; /* Or any other active style */
+}
+
+.sticky__header{
+  width:100%;
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  top: 0;
+  left:0;
+  z-index:99999;
+  background: white;
+  box-shadow: 3px 3px -8px -3px #ddd;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border:1px solid #181a1e !important;
+  background: #fff !important;
+  opacity:100% !important;
+}
+.swiper-pagination-bullet-active{
+  background:#0067ff !important;
+   border: none !important;
+}
+
+.swiper{
+  padding-bottom: 70px !important;
+}
+.swiper-slide.swiper-slide-next {
+  background: #0067ff;
+  border-radius: 12px;
+  box-shadow: 0px 20px 70px rgba(0, 103, 255, 0.3);
+}
+
+.swiper-slide.swiper-slide-next h4,
+ .swiper-slide.swiper-slide-next p{
+  color: #fff !important;;
+}
+@media only screen and (max-width:768px){
+.navigation{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:100;
+  background: #00000084;
+  display: none;
+}
+  .menu{
+    width:15rem;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    background: #fff;
+    z-index:200;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+  .show__menu{
+    display:block;
+  }
+}
